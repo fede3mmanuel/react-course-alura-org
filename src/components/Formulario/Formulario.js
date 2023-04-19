@@ -29,7 +29,7 @@ const Formulario = (props) => {
             <CampoTexto titulo="Nombre" placeholder="Ingresar nombre" required={true} valor={nombre} actualizarValor={actualizarNombre} />
             <CampoTexto titulo="Puesto" placeholder="Ingresar puesto" required valor={puesto} actualizarValor={actualizarPuesto} />
             <CampoTexto titulo="Foto" placeholder="Ingresar enlace de foto" required valor={foto} actualizarValor={actualizarFoto} />
-            <ListaOpciones valor={equipo} actualizarEquipo={actualizarEquipo} />
+            <ListaOpciones valor={equipo} actualizarEquipo={actualizarEquipo} equipos={props.equipos} />
             <Boton>
                 Crear
             </Boton>
